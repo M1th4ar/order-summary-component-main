@@ -162,6 +162,19 @@ body {
   font-weight: 900;
   color: var(--Desaturated-blue);
 }
+.payment-proceed:hover{
+    background: hsla(245, 75%, 52%, 0.6);
+    cursor: pointer;
+}
+.payment-change:hover{
+    text-decoration: none;
+    color: hsla(245, 75%, 52%,0.5);
+    cursor: pointer;
+}
+.payment-cancel:hover{
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
 
 .attribution {
   font-size: 15px;
