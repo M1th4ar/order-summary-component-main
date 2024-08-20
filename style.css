@@ -65,7 +65,7 @@ body {
   border-radius: 1.5rem;
   margin-bottom: 1.25rem;
 }
-.container :not(img, .plan, .plan-icon) {
+.container :not(img, .plan, .plan-icon, .plan-price, .plan-price p) {
   padding: 1.25rem;
 }
 
@@ -109,6 +109,7 @@ body {
   gap: 4rem;
   background: var(--Very-pale-blue);
   border-radius: 1.25rem;
+  padding: 1rem 0rem 1rem 0;
 }
 .plan a {
   justify-self: flex-end;
@@ -118,6 +119,7 @@ body {
 .plan-icon {
   display: flex;
   align-items: center;
+  padding: 0rem;
 }
 
 .plan-icon p {
@@ -134,10 +136,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.plan-price p {
-  padding: 0.25rem;
+  padding: 0;
+  text-align: center;
+  line-height: 2rem;
 }
 
 .payment {
