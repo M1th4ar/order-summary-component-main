@@ -60,12 +60,12 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  background: var(--Very-pale-blue);
+  background: white;
   width: 500px;
   border-radius: 1.5rem;
   margin-bottom: 1.25rem;
 }
-.container :not(img) {
+.container :not(img, .plan, .plan-icon) {
   padding: 1.25rem;
 }
 
@@ -75,24 +75,27 @@ body {
   height: 100%;
 }
 
-.content {
+.top-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
-.content h2 {
+.top-content h2 {
   font-family: "Red Hat Display";
   font-size: 1.75rem;
   font-weight: 900;
 }
 
-.content p {
+.top-content p {
   color: var(--Dark-blue);
   font-family: "Red Hat Display";
-  font-weight: 500;
+  font-weight: 700;
+  color: var(--Desaturated-blue);
   text-align: center;
-  padding: 0 3rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .plan img {
@@ -104,6 +107,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 4rem;
+  background: var(--Very-pale-blue);
+  border-radius: 1.25rem;
 }
 .plan a {
   justify-self: flex-end;
@@ -162,18 +167,18 @@ body {
   font-weight: 900;
   color: var(--Desaturated-blue);
 }
-.payment-proceed:hover{
-    background: hsla(245, 75%, 52%, 0.6);
-    cursor: pointer;
+.payment-proceed:hover {
+  background: hsla(245, 75%, 52%, 0.6);
+  cursor: pointer;
 }
-.payment-change:hover{
-    text-decoration: none;
-    color: hsla(245, 75%, 52%,0.5);
-    cursor: pointer;
+.payment-change:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.5);
+  cursor: pointer;
 }
-.payment-cancel:hover{
-    color: var(--Dark-blue);
-    cursor: pointer;
+.payment-cancel:hover {
+  color: var(--Dark-blue);
+  cursor: pointer;
 }
 
 .attribution {
